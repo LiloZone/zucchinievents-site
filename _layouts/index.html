@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include head.html %}
+</head>
+
+<body>
+
+
+  <!-- Preloader
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="preloader"> 
+    <div id="status"></div> 
+  </div>
+    
+  {% include menu.html %}
+
+  <!-- MASTER CONTENT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <section class="mastwrap fullheight no-scroll-xy">
+
+  
+     <section class="intro07">
+
+        <div id="rev_slider_3_1_wrapper" class="rev_slider_wrapper fullscreen-container home-rev-slider fullheight">
+        <!-- START REVOLUTION SLIDER 4.6.5 fullscreen mode -->
+          <div id="rev_slider_3_1" class="rev_slider fullscreenbanner">
+        <ul>  <!-- SLIDE  -->
+          {% for bg in site.data.bg %}
+          <li data-transition="slidedown" data-slotamount="7" data-masterspeed="1200"  data-saveperformance="off" >
+            <!-- MAIN IMAGE -->
+            <img data-no-retina alt="" title="" src="../{{bg.foto}}"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+            <!-- LAYERS -->
+            <div class="rev-image-overlay rev-image-overlay-dark"></div>
+            <!-- LAYER NR. 1 -->
+            <div class="tp-caption featured-work-caption font2 white lft ltb tp-resizeme" 
+               data-x="center" data-hoffset="0" 
+               data-y="center" data-voffset="0" 
+              data-speed="600" 
+              data-start="600" 
+              data-easing="easeInOutQuad" 
+              data-splitin="none" 
+              data-splitout="none" 
+              data-elementdelay="0.1" 
+              data-endelementdelay="0.1" 
+               data-endspeed="800" 
+              data-endeasing="easeInOutQuad" >{{bg.titulo}} 
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+        </div>
+        </div>
+
+    </section>
+
+  </section>
+  <!-- end : mastwrap -->
+
+
+
+
+  <!-- FOOTER
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <footer class="mastfoot color-bg">
+    {% include footer.html %}
+  </footer>
+
+
+
+
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="javascripts/libs/common.js"></script>
+  <script src="javascripts/libs/bootstrap.min.js"></script>
+
+  <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+  <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+  <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+  <script src="javascripts/custom/main.js"></script>
+
+
+  
+        <script type="text/javascript">
+  
+            
+          /******************************************
+            - PREPARE PLACEHOLDER FOR SLIDER  -
+          ******************************************/
+                  
+           
+          jQuery(document).ready(function() {
+            jQuery('#rev_slider_3_1').show().revolution(
+              { 
+              dottedOverlay:"none",
+            delay:9000,
+            startwidth:1200,
+            startheight:500,
+            hideThumbs:0,
+
+            thumbWidth:100,
+            thumbHeight:50,
+            thumbAmount:3,
+            
+                        
+            simplifyAll:"off",
+
+            navigationType:"bullet",
+            navigationArrows:"none",
+            navigationStyle:"round",
+
+            touchenabled:"on",
+            onHoverStop:"on",
+            nextSlideOnWindowFocus:"off",
+
+            swipe_threshold: 75,
+            swipe_min_touches: 1,
+            drag_block_vertical: false,
+            
+                        
+                        
+            keyboardNavigation:"off",
+
+            navigationHAlign:"right",
+            navigationVAlign:"center",
+            navigationHOffset:20,
+            navigationVOffset:0,
+
+            soloArrowLeftHalign:"left",
+            soloArrowLeftValign:"center",
+            soloArrowLeftHOffset:20,
+            soloArrowLeftVOffset:0,
+
+            soloArrowRightHalign:"right",
+            soloArrowRightValign:"center",
+            soloArrowRightHOffset:20,
+            soloArrowRightVOffset:0,
+
+            shadow:0,
+            fullWidth:"off",
+            fullScreen:"on",
+
+                        spinner:"spinner0",
+                        
+            stopLoop:"off",
+            stopAfterLoops:-1,
+            stopAtSlide:-1,
+
+            shuffle:"off",
+
+            
+            forceFullWidth:"off",
+            fullScreenAlignForce:"off",
+            minFullScreenHeight:"",
+            hideTimerBar:"on",
+            hideThumbsOnMobile:"off",
+            hideNavDelayOnMobile:1500,
+            hideBulletsOnMobile:"off",
+            hideArrowsOnMobile:"off",
+            hideThumbsUnderResolution:0,
+
+                        fullScreenOffsetContainer: "#pseudo-header",
+            fullScreenOffset: "",
+                        hideSliderAtLimit:0,
+            hideCaptionAtLimit:0,
+            hideAllCaptionAtLilmit:0,
+            startWithSlide:0                    
+            });
+          }); //ready
+          
+        </script>               
+
+
+</body>
+</html>
