@@ -1,0 +1,53 @@
+/* Caslon import */
+
+@font-face {
+    font-family: 'Caslon' ;
+    src: url("../fonts/Caslon/ACaslonPro-Regular.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Caslon' ;
+    src: url("../fonts/Caslon/ACaslonPro-Italic.otf");
+    font-style: italic;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Caslon' ;
+    src: url("../fonts/Caslon/ACaslonPro-Bold.otf");
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Caslon' ;
+    src: url("../fonts/Caslon/ACaslonPro-BoldItalic.otf");
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* News Gothic */
+
+@font-face {
+    font-family: 'News Gothic' ;
+    src: url("../fonts/NewsGothic/NewsGothicStd.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'News Gothic' ;
+    src: url("../fonts/NewsGothic/NewsGothicStd-Oblique.otf");
+    font-style: italic;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'News Gothic' ;
+    src: url("../fonts/NewsGothic/NewsGothicStd-Bold.otf");
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'News Gothic' ;
+    src: url("../fonts/NewsGothic/NewsGothicStd-BoldOblique.otf");
+    font-style: italic;
+    font-weight: bold;
+}
